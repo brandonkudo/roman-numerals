@@ -16,7 +16,7 @@ function hundredFunction(input){
   var hundred2Replace = input.charAt(1).replace("1", "X").replace("2", "XX").replace("3", "XXX").replace("4", "XL").replace("5", "L").replace("6", "LX").replace("7", "LXX").replace("8", "LXXX").replace("9", "XC").replace(/0/g, "");
   var hundred3Replace = input.charAt(2).replace(/1/g, "I").replace(/2/g, "II").replace(/3/g,"III").replace(/4/g, "IV").replace(/5/g, "V").replace(/6/g, "VI").replace(/7/g, "VII").replace(/8/g, "VIII").replace(/9/g, "IX").replace(/0/g, "");
   return hundredReplace + hundred2Replace + hundred3Replace
-}
+} 
 
 function thousandFunction(input){
   var thousandReplace =  input.charAt(0).replace("1","M").replace("2","MM").replace("3","MMM").replace("4","MMMM");
